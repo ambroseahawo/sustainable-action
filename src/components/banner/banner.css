@@ -1,0 +1,74 @@
+/* Banner area styles */
+.banner-area {
+    background-image: url(../../assets/images/Slide1.jpg);
+    margin-top: 50px;
+    padding: 250px 0 80px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+h4 {
+    color: #222;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px !important;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.greater-z-index{
+    z-index: 990;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 45px !important;
+    font-weight: 700;
+}
+
+.template-btn {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to right, #244cfd, #15e4fd);
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 12px 30px !important;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.template-btn:hover {
+    color: #fff;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: .8;
+    text-decoration: solid;
+    -ms-transform: scale(0.9);
+    /* IE 9 */
+    -webkit-transform: scale(0.9);
+    /* Safari 3-8 */
+    transform: scale(0.9);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
