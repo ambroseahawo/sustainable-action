@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles.css'
 
 const AboutUs = () => {
     return (
@@ -7,7 +6,7 @@ const AboutUs = () => {
             <div className="content-container">
                 <div className="about1-image custom-image"></div>
                 <div className="float-content">
-                    <h2>organization profile</h2>
+                    <h2>Organization profile</h2>
                     <p>Sustainable Action (SA) is a Community Based Organization (CBO)</p>
                     <p>Registered in 2014</p>
                     <p>Started earlier than 2014 by a group of CHVs who identified adolescent & young people’ challenges during HH Visits</p>
@@ -19,7 +18,7 @@ const AboutUs = () => {
                 <div className="about2-image custom-image"></div>
                 <div className="float-content">
                     <h2>Organization Structure</h2>
-                    <p>The organization is run by a board that is made up of 9 people with different areas of expertise.</p>
+                    <p>The organization is run by a board that is made up of 9 voluntary people with different areas of expertise.</p>
                     <p>It is coordinated through one coordinator who reports directly to the board.</p>
                     <p>The coordinator gives overall technical support to the organization, supported by  volunteer officers ( 1 Nursing Officer, 3 Mentors, 1 Finance Assistant & 1 Office Assistant)</p>
                     <p>Area of coverage - covering Karemo, Uranga and Boro regions, originally Divisional administrative areas (Currently Alego Usonga Sub County)</p>

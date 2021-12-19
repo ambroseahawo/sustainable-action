@@ -4,14 +4,14 @@ import './banner.css'
 const Banner = () => {
     return (
         <section className="banner-area">
-            <div className="container">
+            <div className="container banner-content">
                 <div className="row">
-                    <div className="col-lg-5 greater-z-index">
+                    <div className="mt-0 greater-z-index text-center">
                         <h1>welcome to</h1>
                         <h1>sustainable action</h1>
 
                         <a href='/about' className="template-btn mt-3">About us</a>
-                        <a href='/' className="template-btn mt-3">Contact us</a>
+                        <a href='#rs-footer' className="template-btn mt-3">Contact us</a>
                     </div>
                 </div>
             </div>

@@ -1,48 +1,35 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/logo.png'
+import { Navbar, Nav } from 'react-bootstrap'
+import logo from '../../assets/images/logo.png'
 import './navbar.css'
 
-const Navbar = () => {
+const Header = () => {
     const [click, setClick] = useState(false)
 
-    const handleClick = () => {
-        if (window.innerWidth < 960) {
-            setClick(!click)
-        }
+    const handleClick =() => {
+        setClick(!click)
     }
 
     return (
-        <div id="header">
-            <div className="container">
-                <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? 'lnr lnr-cross' : 'lnr lnr-menu'} ></i>
-                </div>
-                <div className={click ? "" : "row align-items-center justify-content-between dflex"}>
-                    <div id="logo">
-                        <Link to="/">
-                            <img className='logo' src={Logo} alt="SA-logo" height="56"/>
-                        </Link>
-                    </div>
-                    
-                    <nav id="nav-menu-container">
-                        <ul className={click ? "nav-menu mobile-nav" : "nav-menu"}>
-                            <li className="nav-item" onClick={handleClick}>
-                                <Link to="/" className='nav-links'>home</Link>
-                            </li>
-                            <li className="nav-item" onClick={handleClick}>
-                                <Link to="/about" className='nav-links'>about us</Link>
-                            </li>
-                            <li className="nav-item" onClick={handleClick}>
-                                <Link to="/" className='nav-links'>contact us</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div id="overlay" className={ click ? 'display-overlay': 'display-none' } onClick={handleClick}></div>
-        </div>
+        <Navbar bg='navBgColor' variant='dark' fixed='top' expand='sm'>
+            <Navbar.Brand href='/'>
+                <img className='nav-logo' src={logo} alt="sa" height="56"/>
+            </Navbar.Brand>
+
+            <Navbar.Toggle as='div' bsPrefix='menu-icon' onClick={handleClick}>
+                <i className={click ? 'lnr lnr-cross' : 'lnr lnr-menu'} ></i>
+            </Navbar.Toggle>
+            <Navbar.Collapse>
+                <Nav>
+                    <Nav.Link href='/'>Home</Nav.Link>
+                    <Nav.Link href='/about'>About Us</Nav.Link>
+                    <Nav.Link href='#rs-footer'>Contact Us</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+
+            {/* <div id="overlay" className={ click ? 'display-overlay': 'display-none' } onClick={handleClick}></div> */}
+        </Navbar>
     )
 }
 
-export default Navbar
+export default Header
